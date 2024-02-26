@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>registration</title>
+</head>
+
+<body>
+    
+
+    <form id="registrationForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+    
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <label>Gender:</label>
+        <label class="custom-radio">Male<input type="radio" name="gender" value="male" required><span
+                class="checkmark"></span></label>
+        <label class="custom-radio">Female<input type="radio" name="gender" value="female" required><span
+                class="checkmark"></span></label>
+        <label class="custom-radio">Other<input type="radio" name="gender" value="other" required><span
+                class="checkmark"></span></label>
+
+        <label for="Hobby">Hobby:</label>
+        <label class="custom-checkbox">Reading<input type="checkbox" name="hobbies" value="reading"><span
+                class="checkmark"></span></label>
+        <label class="custom-checkbox">Coding<input type="checkbox" name="hobbies" value="coding"><span
+                class="checkmark"></span></label>
+        <label class="custom-checkbox">Traveling<input type="checkbox" name="hobbies" value="traveling"><span
+                class="checkmark"></span></label>
+
+    
+        <p id="error-message" class="error"></p>
+    
+        <button type="button" onclick="validate()">Submit</button>
+    </form>
+ <script src="script.js"></script>
+</body>
+</html>
